@@ -13,7 +13,7 @@ class Camara {
 
         navigator.mediaDevices.getUserMedia({
             audio: false,
-            video: { width: 300, height: 300 }
+            video: { width: 200, height: 200 }
         }).then( stream => {
 
             this.videoNode.srcObject = stream;
@@ -44,8 +44,8 @@ class Camara {
 
 
         // Colocar las dimensiones igual al elemento del video
-        canvas.setAttribute('width', 300 );
-        canvas.setAttribute('height', 300 );
+        canvas.setAttribute('width', 200 );
+        canvas.setAttribute('height', 200 );
 
         // obtener el contexto del canvas
         let context = canvas.getContext('2d'); // una simple imagen
